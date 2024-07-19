@@ -1,3 +1,6 @@
+let humanScore    = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let max = 2;
     let min = 0;
@@ -17,24 +20,43 @@ function getHumanChoice() {
     return choice;
 }
 
-let humanScore    = 0;
-let computerScore = 0;
-
 function playRound(humanChoice, computerChoice) {
     // draw scenario
     if (humanChoice === computerChoice)
-        return "Draw!";
+        console.log("Draw!");
 
     // winning scenarios
-    if (humanChoice === "rock" && computerChoice === "scissors"
+    else if (humanChoice === "rock" && computerChoice === "scissors"
         || humanChoice === "paper" && computerChoice === "rock"
         || humanChoice === "scissors" && computerChoice === "paper") 
     {
         humanScore++;
-        return "Player wins this round!";
+        console.log("Player wins this round!");
     }
     
     // losing scenario remains
-    computerScore++;
-    return "Computer wins this round!";
+    else {
+        computerScore++;
+        console.log("Computer wins this round!");
+    }
+}
+
+// Game Loop:
+for (let i = 1; i <= 5; i++) {
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
+    console.log("Player chooses: " + humanChoice);
+    console.log("Computer chooses: " + computerChoice);
+    playRound(humanChoice, computerChoice);
+}
+
+// Game result:
+if (humanScore === computerScore) {
+    console.log("The game was a draw.")
+}
+else if (humanScore < computerScore) {
+    console.log("Computer wins the game!")
+}
+else {
+    console.log("Player wins the game!")
 }
