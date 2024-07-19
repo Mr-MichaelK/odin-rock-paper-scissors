@@ -14,3 +14,6 @@ For the time being, the game will have no GUI, so it will be played in the conso
 ##### getComputerChoice():
 Generates a random integer from 0 to 2.
 0 returns rock, 1 returns paper, 2 returns scissors
+
+##### getHumanChoice():
+Takes a string input from the user which is strictly in the set {"rock", "paper", "scissors"} (case insensitive) and returns it.
