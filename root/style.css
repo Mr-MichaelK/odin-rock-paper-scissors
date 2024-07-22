@@ -4,6 +4,7 @@ body {
     height: 100vh;
     align-items: center;
     gap: 20px;
+    background-color: #121481;
 }
 
 .score-box,
@@ -14,7 +15,7 @@ body {
     padding: 20px 40px;
     font-family:'digital-clock-font';
     color: red;
-    background-color: black;
+    background-color: #191919;
 }
 
 .score-box {
@@ -42,6 +43,14 @@ body {
     align-self: stretch;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+}
+
 .player-choice,
 .computer-choice {
     display: flex;
@@ -54,17 +63,26 @@ body {
     padding: 20px;
     height: 262px;
     width: 310px;
+    background-color: white;
+}
+
+.player-choice img,
+.computer-choice img {
+    height: 225px;
+    width: auto;
 }
 
 .choices {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .choices button {
     font-size: 20px;
     padding: 5px 10px;
     width: 100px;
+    background-color: #191919;
+    color: white;
 }
 
 .round-winner {
@@ -72,16 +90,19 @@ body {
 }
 
 .game-winner {
-    font-size: 30px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
+    color: #9AC8CD;
 }
 
 .game-winner button {
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #191919;
+    color: white;
 }
 
 .how-to-play {
@@ -90,6 +111,7 @@ body {
     border-width: 5px;
     padding: 20px;
     margin: 60px;
+    background-color: #996117;
 }
 
 .how-to-play li {
@@ -98,4 +120,5 @@ body {
 
 .how-to-play strong {
     font-size: 40px;
+    color: rgb(255, 234, 0);
 }
