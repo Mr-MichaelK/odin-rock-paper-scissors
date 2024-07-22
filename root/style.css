@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-box,
+.round-timer {
+    font-weight: 900;
+    border: thick solid black;
+    border-width: 5px;
+    padding: 20px 40px;
+    font-family:'digital-clock-font';
+    color: red;
+    background-color: black;
+}
+
+.score-box {
+    margin: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url(../resources/DIGITALDREAMFAT.ttf);
+   }
+
+.round-timer {
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.choice-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: stretch;
+}
+
+.player-choice,
+.computer-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    border: thick solid black;
+    border-width: 5px;
+    padding: 20px;
+    height: 262px;
+    width: 310px;
+}
+
+.choices {
+    display: flex;
+    gap: 5px;
+}
+
+.choices button {
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 100px;
+}
+
+.round-winner {
+    font-size: 30px;
+}
+
+.game-winner {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.game-winner button {
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.how-to-play {
+    font-size: 30px;
+    border: thick solid black;
+    border-width: 5px;
+    padding: 20px;
+    margin: 60px;
+}
+
+.how-to-play li {
+    padding: 3px;
+}
+
+.how-to-play strong {
+    font-size: 40px;
+}
