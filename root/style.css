@@ -7,8 +7,7 @@ body {
     background-color: #121481;
 }
 
-.score-box,
-.round-timer {
+.score-box {
     font-weight: 900;
     border: thick solid black;
     border-width: 5px;
@@ -28,13 +27,6 @@ body {
     font-family:'digital-clock-font';
     src: url(../resources/DIGITALDREAMFAT.ttf);
    }
-
-.round-timer {
-    margin: 20px;
-    text-align: center;
-    font-size: 30px;
-    
-}
 
 .choice-box {
     display: flex;
@@ -112,6 +104,7 @@ body {
     padding: 20px;
     margin: 60px;
     background-color: #996117;
+    align-self: stretch;
 }
 
 .how-to-play li {
@@ -121,4 +114,5 @@ body {
 .how-to-play strong {
     font-size: 40px;
     color: rgb(255, 234, 0);
+    padding-left: 10px;
 }
