@@ -41,6 +41,30 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+const rockButton     = document.querySelector(".rock");
+const paperButton    = document.querySelector(".paper");
+const scissorsButton = document.querySelector(".scissors");
+
+const playerImage   = document.querySelector(".player-image");
+const computerImage = document.querySelector(".computer-image");
+
+const scoreBuzzer = document.querySelector(".score-box");
+const timeBuzzer  = document.querySelector(".round-timer");
+
+const roundText = document.querySelector(".game-winner");
+const readyButton = document.querySelector(".game-winner button");
+
+rockButton.addEventListener("click", () => {
+    playerImage.src = "../resources/rock.png";
+});
+
+paperButton.addEventListener("click", () => {
+    playerImage.src = "../resources/paper.png";
+});
+
+scissorsButton.addEventListener("click", () => {
+    playerImage.src = "../resources/scissors.png";
+})
 
 // Game result:
 if (humanScore === computerScore) {
