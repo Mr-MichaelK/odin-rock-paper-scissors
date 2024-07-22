@@ -41,14 +41,6 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-// Game Loop:
-for (let i = 1; i <= 5; i++) {
-    let humanChoice = getHumanChoice();
-    let computerChoice = getComputerChoice();
-    console.log("Player chooses: " + humanChoice);
-    console.log("Computer chooses: " + computerChoice);
-    playRound(humanChoice, computerChoice);
-}
 
 // Game result:
 if (humanScore === computerScore) {
